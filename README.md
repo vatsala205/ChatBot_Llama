@@ -1,7 +1,7 @@
-🧠 AI Coverage Assistant Chatbot
+**🧠 AI Coverage Assistant Chatbot**
 A locally hosted AI-powered chatbot designed to assist users with coverage, app features, and general support queries. Built using Flask and a lightweight local language model (via Ollama), the assistant serves responses in a focused, helpful tone.
 
-🚀 Features
+***🚀 Features***
 🗣️ Natural language understanding via local LLM
 
 📡 Domain-specific prompt tuning for relevant responses
@@ -10,7 +10,8 @@ A locally hosted AI-powered chatbot designed to assist users with coverage, app 
 
 🔒 Fully local – no external API calls
 
-🛠 Tech Stack
+***🛠 Tech Stack***
+
 Python (Flask)
 
 JavaScript (vanilla)
@@ -21,27 +22,29 @@ Ollama (for running LLMs locally)
 
 📦 Setup Instructions
 Clone the repository
-
+```
 git clone https://github.com/your-username/ai-coverage-chatbot.git
 cd ai-coverage-chatbot/backend
+```
 Create and activate a virtual environment
-
-
+```
 python -m venv venv
 venv\Scripts\activate   # Windows
+```
+
 Install dependencies
+```pip install flask```
 
-pip install flask
 Run Ollama in a separate terminal
+```ollama serve``` 
 
-
-ollama serve
 Run the Flask app
+```python app.py```
 
-
-python app.py
 Visit
+```bash
 Open http://127.0.0.1:5000 in your browser.
+```
 
 📂 Project Structure
 ``` bash
@@ -56,8 +59,9 @@ chatbot_llama/
  ```
 🤖 Prompt Template
 All queries use this custom prompt format:
-**
+```css
 You are a helpful assistant for a coverage-based mobile app. Provide clear and concise answers to users about network coverage, availability, in-app functionality, and any related queries.
 User: <message>
 AI:
-**
+
+```
