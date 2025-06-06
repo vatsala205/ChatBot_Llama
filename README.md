@@ -44,7 +44,7 @@ Visit
 Open http://127.0.0.1:5000 in your browser.
 
 📂 Project Structure
-**
+``` bash
 chatbot_llama/
 ├── backend/
 │   ├── app.py
@@ -53,8 +53,7 @@ chatbot_llama/
 │   └── static/
 │       ├── style.css
 │       └── script.js
-**
-
+ ```
 🤖 Prompt Template
 All queries use this custom prompt format:
 **
